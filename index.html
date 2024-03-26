@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo list</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicon/site.webmanifest" />
+		<script defer src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Шапка -->
+			<header class="header">
+				<h1 class="header__title">ToDo list</h1>
+				<p class="header__text">Распланируй свой день</p>
+			</header>
+			<!-- Основа -->
+			<main class="main">
+				<ul id="taskList" class="main__list">
+					<!-- Элемент "список задач пуст" -->
+					<!-- <li id="listZero" class="main__list-item-zero">
+						<img src="img/leaf.svg" alt="todo list" />
+						<p class="main__list-item-text">Список задач пуст.</p>
+					</li> -->
+					<!-- <li id="tasks" class="tasks none">
+						<p class="tasks__text">Задачи:</p>
+					</li> -->
+					<!-- Задача -->
+					<!-- <li class="main__list-item">	
+						<span class="main__list-item-text">Задача 1</span>
+						<div class="main__list-item-buttons">
+							<button class="main__list-item-btn main__list-item-btn-done">
+								<img src="img/tick.svg" alt="done" />
+							</button>
+							<button class="main__list-item-btn main__list-item-btn-delete">
+								<img src="img/cross.svg" alt="delete" />
+							</button>
+						</div>
+					</li> -->
+				</ul>
+				<!-- Форма отправки -->
+				<form id="taskForm" class="form">
+					<input
+						type="text"
+						id="taskInput"
+						class="form__input"
+						placeholder="Введите текст"
+						required
+					/>
+					<button type="submit" class="form__btn">Добавить</button>
+				</form>
+			</main>
+			<footer class="footer">
+				<p class="footer__text">Author: Roman Chumachenko</p>
+			</footer>
+		</div>
+	</body>
+</html>

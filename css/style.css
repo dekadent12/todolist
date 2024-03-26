@@ -1,0 +1,229 @@
+:root {
+	--bgc-light-gray: rgb(245, 242, 242);
+	--bt-light-red: rgb(243, 117, 117);
+	--bgc-blue: rgb(103, 106, 247);
+	--bgc-blue-hover: rgb(119, 121, 212);
+	--bgc-blue-active: rgb(55, 58, 240);
+	--b-blue: rgb(0, 4, 238);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+input {
+	padding: 0;
+	border: none;
+}
+
+img {
+	max-width: 100%;
+	pointer-events: none;
+}
+
+body {
+	color: #000;
+	font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.none {
+	display: none !important;
+}
+
+/* Задача завершена */
+.task-close {
+	text-decoration: line-through;
+	color: #cdcdcd;
+}
+
+/* Контейнер */
+.container {
+	max-width: 600px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+/* Хедер */
+.header {
+	background-color: var(--bgc-light-gray);
+	padding: 10px 5px;
+	text-align: center;
+	border-bottom: 2px solid var(--bt-light-red);
+	margin-bottom: 10px;
+}
+
+/* Заголовок хедера */
+.header__title {
+	font-size: 45px;
+	font-weight: 900;
+}
+
+/* Основа */
+.main {
+	background-color: var(--bgc-light-gray);
+	border: 2px solid var(--bt-light-red);
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+/* Список */
+.main__list-item-zero {
+	background-color: #fff;
+	padding: 10px 10px 5px 10px;
+	border-bottom: 1px solid #272727;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.tasks {
+	display: inline-block;
+	background-color: rgb(6, 196, 6);
+	padding: 10px 10px 5px 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/* Задача */
+.main__list-item {
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	border-bottom: 1px solid #272727;
+	padding: 10px 10px 5px 10px;
+}
+
+/* Кнопки задачи */
+.main__list-item-btn {
+	border-radius: 10px;
+	transition: background-color, 0.3s;
+}
+
+/* Кнопка "задача завершена" */
+.main__list-item-btn-done:hover {
+	background-color: rgb(1, 199, 1);
+}
+
+.main__list-item-btn-done:active {
+	background-color: rgb(2, 124, 2);
+}
+
+/* Кнопка удалить задачу */
+.main__list-item-btn-delete:hover {
+	background-color: red;
+}
+
+.main__list-item-btn-delete:active {
+	background-color: rgb(153, 1, 1);
+}
+
+.main__list-item img {
+	width: 23px;
+	height: 23px;
+}
+
+.main__list-item-zero p {
+	font-size: 22px;
+}
+
+/* Список задач пуст */
+.main__list-item-zero img {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+/* Форма отправки */
+.form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+}
+
+/* Поле ввода */
+.form__input {
+	padding: 10px 30px;
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	background-color: var(--bgc-blue);
+	outline: none;
+	color: #fff;
+	border-radius: 12px;
+	border: 1px solid var(--b-blue);
+	transition: background-color, 0.3s;
+}
+
+.form__input:hover {
+	background-color: var(--bgc-blue-hover);
+}
+
+.form__input:active {
+	background-color: var(--bgc-blue-active);
+}
+
+.form__input::placeholder {
+	color: #fff;
+	opacity: 0.4;
+	transition: opacity, 0.3s;
+}
+
+.form__input:hover::placeholder {
+	opacity: 1;
+}
+
+.form__input:focus::placeholder {
+	opacity: 1;
+}
+
+/* Кнопка отправки */
+.form__btn {
+	display: inline-block;
+	background-color: var(--bgc-blue);
+	color: #fff;
+	border-radius: 12px;
+	border: 1px solid var(--b-blue);
+	padding: 15px 30px;
+	font-size: 25px;
+	transition: background-color, 0.3s;
+}
+
+.form__btn:hover {
+	background-color: var(--bgc-blue-hover);
+}
+
+.form__btn:active {
+	background-color: var(--bgc-blue-active);
+}
+
+/* Футер */
+.footer__text {
+	text-align: center;
+	font-weight: 500;
+}
